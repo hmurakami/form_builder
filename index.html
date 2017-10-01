@@ -179,7 +179,15 @@ $(function(){
 </head>
 <body>
 
-<h1>フォームのhtml生成</h1>
+<nav id="nav">
+  <a href="#c1">フォームのhtml生成</a>
+  <a href="#c2">入力ページ</a>
+  <a href="#c3">確認ページ</a>
+  <a href="#c4">完了ページ</a>
+</nav>
+
+<h1 id="c1">フォームのhtml生成 <a href="#nav"><span style="font-size: small;">↑</span></a></h1>
+
 
 必須マークのhtml
 <br />
@@ -589,5 +597,50 @@ ${required}
 <script id="item-confirm-other" type="text/x-jquery-tmpl">
 
 </script>
+
+<h1 id="c2">入力ページ <a href="#nav"><span style="font-size: small;">↑</span></a></h1></h1>
+
+<p>ファイル名: entry.html</p>
+
+<p>構成</p>
+<pre>
+&lt;form method="post"&gt;
+[入力欄]
+[送信ボタン(submit)]
+&lt;/form&gt;
+</pre>
+
+※ action は書かないようにしてください
+
+<h1 id="c3">確認ページ <a href="#nav"><span style="font-size: small;">↑</span></a></h1></h1>
+
+<p>ファイル名: confirm.html</p>
+
+<p>構成</p>
+<pre>
+[確認画面表示]
+&lt;form action="./entry.php" method="post"&gt;
+[戻るボタン(submit)]
+&lt;/form&gt;
+&lt;form action="./submit.php" method="post"&gt;
+[送信ボタン(submit)]
+&lt;/form&gt;
+</pre>
+
+確認画面ボタン周りサンプル
+<textarea style="width:90%;height:100px;">
+<form action="./entry.php" method="post" style="display:inline;">
+  <input type="submit" value="戻る" />
+</form>
+<form action="./submit.php" method="post" style="display:inline;">
+  <input type="submit" value="送信" />
+</form>
+</textarea>
+
+
+<h1 id="c4">完了ページ <a href="#nav"><span style="font-size: small;">↑</span></a></h1></h1>
+
+<p>ファイル名: submit.html</p>
+
 </body>
 </html>
