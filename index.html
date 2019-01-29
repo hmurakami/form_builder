@@ -210,7 +210,7 @@ $(function(){
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="subject" data-validate="required" class="err"></div>{{/if}}
+{{if required}}<div data-form="subject" data-validate="required" class="err">選択してください。</div>{{/if}}
 <label><input type="radio" name="subject" value="1"> 事業内容・製品情報について</label><br>
 <label><input type="radio" name="subject" value="2"> 採用情報について</label><br>
 <label><input type="radio" name="subject" value="3"> IR情報について</label><br>
@@ -225,7 +225,7 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="body" data-validate="required" class="err"></div>{{/if}}
+{{if required}}<div data-form="body" data-validate="required" class="err">入力してください。</div>{{/if}}
 <textarea name="body" data-filter="trim" cols="50" rows="10" class="" placeholder=""></textarea>
 </td>
 </tr>
@@ -237,7 +237,7 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="category" data-validate="required" class="err"></div>{{/if}}
+{{if required}}<div data-form="category" data-validate="required" class="err">選択してください。</div>{{/if}}
 <label><input type="radio" name="category" value="1"> 個人のお客様</label><br>
 <label><input type="radio" name="category" value="2"> 法人・団体のお客様</label><br>
 <label><input type="radio" name="category" value="3"> 採用希望の方</label>
@@ -251,7 +251,7 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="company" data-validate="required" class="err"></div>{{/if}}
+{{if required}}<div data-form="company" data-validate="required" class="err">入力してください。</div>{{/if}}
 <input name="company" data-filter="trim" type="text" class="" placeholder="" />
 </td>
 </tr>
@@ -263,7 +263,7 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="division" data-validate="required" class="err"></div>{{/if}}
+{{if required}}<div data-form="division" data-validate="required" class="err">入力してください。</div>{{/if}}
 <input name="division" data-filter="trim" type="text" class="" placeholder="" />
 </td>
 </tr>
@@ -321,8 +321,8 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="zip" data-validate="required" class="err"></div>{{/if}}
-<div data-form="zip" data-validate="postal" class="err"></div>
+{{if required}}<div data-form="zip" data-validate="required" class="err">入力してください。</div>{{/if}}
+<div data-form="zip" data-validate="postal" class="err">正しい郵便番号を入力してください。</div>
 <input name="zip" data-filter="trim|single|postal" type="text" class="" placeholder="" />
 <span>（半角数字）</span>
 </td>
@@ -335,8 +335,8 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="zip" data-validate="required" class="err"></div>{{/if}}
-<div data-form="zip" data-validate="postal" class="err"></div>
+{{if required}}<div data-form="zip" data-validate="required" class="err">入力してください。</div>{{/if}}
+<div data-form="zip" data-validate="postal" class="err">正しい郵便番号を入力してください。</div>
 <input name="zip1" data-filter="trim|single" type="text" class="" placeholder="" />
 <input name="zip2" data-filter="trim|single" type="text" class="" placeholder="" />
 <span>（半角数字）</span>
@@ -350,7 +350,7 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="addr" data-validate="required" class="err"></div>{{/if}}
+{{if required}}<div data-form="addr" data-validate="required" class="err">入力してください。</div>{{/if}}
 <input name="addr" data-filter="trim" type="text" class="" placeholder="" />
 </td>
 </tr>
@@ -362,8 +362,8 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="tel" data-validate="required" class="err"></div>{{/if}}
-<div data-form="tel" data-validate="phone" class="err"></div>
+{{if required}}<div data-form="tel" data-validate="required" class="err">入力してください。</div>{{/if}}
+<div data-form="tel" data-validate="phone" class="err">正しい電話番号を入力してください。</div>
 <input name="tel" data-filter="trim|single|phone" type="text" class="" placeholder="" />
 <span>（半角数字）</span>
 </td>
@@ -376,8 +376,8 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="tel" data-validate="required" class="err"></div>{{/if}}
-<div data-form="tel" data-validate="phone" class="err"></div>
+{{if required}}<div data-form="tel" data-validate="required" class="err">入力してください。</div>{{/if}}
+<div data-form="tel" data-validate="phone" class="err">正しい電話番号を入力してください。</div>
 <input name="tel1" data-filter="trim|single" type="text" class="" placeholder="" />
 <input name="tel2" data-filter="trim|single" type="text" class="" placeholder="" />
 <input name="tel3" data-filter="trim|single" type="text" class="" placeholder="" />
@@ -392,8 +392,8 @@ FAX番号
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="fax" data-validate="required" class="err"></div>{{/if}}
-<div data-form="fax" data-validate="phone" class="err"></div>
+{{if required}}<div data-form="fax" data-validate="required" class="err">入力してください。</div>{{/if}}
+<div data-form="fax" data-validate="phone" class="err">正しい電話番号を入力してください。</div>
 <input name="fax" data-filter="trim|single|phone" type="text" class="" placeholder="" />
 <span>（半角数字）</span>
 </td>
@@ -406,8 +406,8 @@ FAX番号
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="fax" data-validate="required" class="err"></div>{{/if}}
-<div data-form="fax" data-validate="phone" class="err"></div>
+{{if required}}<div data-form="fax" data-validate="required" class="err">入力してください。</div>{{/if}}
+<div data-form="fax" data-validate="phone" class="err">正しい電話番号を入力してください。</div>
 <input name="fax1" data-filter="trim|single" type="text" class="" placeholder="" />
 <input name="fax2" data-filter="trim|single" type="text" class="" placeholder="" />
 <input name="fax3" data-filter="trim|single" type="text" class="" placeholder="" />
@@ -422,8 +422,8 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="mail" data-validate="required" class="err"></div>{{/if}}
-<div data-form="mail" data-validate="email" class="err"></div>
+{{if required}}<div data-form="mail" data-validate="required" class="err">入力してください。</div>{{/if}}
+<div data-form="mail" data-validate="email" class="err">正しいメールアドレスを入力してください。</div>
 <input name="mail" data-filter="trim|single" type="text" class="" placeholder="" />
 <span>（半角英数字）</span>
 </td>
@@ -434,7 +434,7 @@ ${required}
 ${required}
 </th>
 <td>
-{{if required}}<div data-form="mail_conf" data-validate="required" class="err"></div>{{/if}}
+{{if required}}<div data-form="mail_conf" data-validate="required" class="err">入力してください。</div>{{/if}}
 <div data-form="mail_conf" data-validate="equals[mail]" class="err">同じメールアドレスを入力してください。</div>
 <input name="mail_conf" data-filter="trim|single" type="text" class="" placeholder="" />（半角英数字）
 </td>
